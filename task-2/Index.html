@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task 2 - Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="main_container">
+        <input type="text" id="outputDisplay" disabled>
+        <div class="icon"><i class="fa fa-calculator" aria-hidden="true"></i></div>
+        <div class="grid-item">
+            <button class="item" onclick="clearDisplay()"><span class="clear">C</span></button>
+            <button class="item" onclick="appendToOutputDisplay('%')"><span class="symbols">%</span></button>
+            <button class="item" onclick="appendToOutputDisplay('/')"><span class="symbols">/</span></button>
+            <button class="item" onclick="appendToOutputDisplay('*')"><span class="symbols">*</span></button>
+
+            <button class="item" onclick="appendToOutputDisplay('7')">7</button>
+            <button class="item" onclick="appendToOutputDisplay('8')">8</button>
+            <button class="item" onclick="appendToOutputDisplay('9')">9</button>  
+            <button class="item" onclick="appendToOutputDisplay('-')"><span class="symbols">-</span></button>
+
+            <button class="item" onclick="appendToOutputDisplay('4')">4</button>
+            <button class="item" onclick="appendToOutputDisplay('5')">5</button>
+            <button class="item" onclick="appendToOutputDisplay('6')">6</button>
+            <button class="item" onclick="appendToOutputDisplay('+')"><span class="symbols">+</span></button>
+
+            <button class="item" onclick="appendToOutputDisplay('1')">1</button>
+            <button class="item" onclick="appendToOutputDisplay('2')">2</button>
+            <button class="item" onclick="appendToOutputDisplay('3')">3</button>
+            <button class="item" onclick="calculate()" id="equalto">=</button>
+
+            <button class="item" onclick="appendToOutputDisplay('0')">0</button>
+            <button class="item" onclick="appendToOutputDisplay('.')">.</button>
+        </div>  
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
