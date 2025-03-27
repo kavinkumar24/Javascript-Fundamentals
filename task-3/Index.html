@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 3 - Image Gallery Lightbox</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <div class="title">
+                <h1>H e y</h1>
+                <h3>These are the PIC of march</h3>
+            </div>
+            <div class="gallery_collections">
+
+                <div class="card">
+                    <img src="./assests/pic1.jpg" alt="Image 1" data-large="./assests/pic1.jpg">
+                </div>
+                <div class="card">
+                    <img src="./assests/pic4.jpg" alt="Image 2" data-large="./assests/pic4.jpg">
+                </div>
+                <div class="card">
+                    <img src="./assests/pic5.jpg" alt="Image 3" data-large="./assests/pic5.jpg">
+                </div>
+                <div class="card">
+                    <img src="./assests/pic6.jpg" alt="Image 3" data-large="./assests/pic6.jpg">
+                </div>
+
+                <div class="card">
+                    <img src="./assests/pic7.avif" alt="Image 3" data-large="./assests/pic7.avif">
+                </div>
+                <div class="card">
+                    <img src="./assests/pic3.jpg" alt="Image 3" data-large="./assests/pic3.jpg">
+                </div>
+
+            </div>
+
+            <div id="lightbox" class="modal">
+                <span class="close">&times;</span>
+                <img id="modal-image" class="modal-content" alt="Large Image">
+            </div>
+
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
