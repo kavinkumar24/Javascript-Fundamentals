@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./assests/bg.avif');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: auto 1fr 2fr;
+    gap: 20px;
+    width: 70%;
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.297);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px;
+    width: 240px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.left p {
+    font-size: 10px;
+
+    text-align: justify;
+    margin: 0;
+}
+
+.input_container {
+    display: flex;
+    align-items: end;
+    bottom: 0px;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    width: 200px;
+}
+
+button {
+    background-color: #39a0cc;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2c7a99;
+}
+
+button i {
+    font-size: 18px;
+    color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+}
+
+.gif {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    background: url('your-gif-url-here') no-repeat center center;
+    background-size: contain;
+    justify-content: center;
+    margin-top: 90%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin: 0;
+    height: 200px;
+    width: 300px;
+}
+
+.temperature {
+    font-size: 3.5em;
+    color: #ffffff;
+    margin: 0;
+    height: 100px;
+}
+
+.weather-details {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+}
+
+.weather-details p {
+    margin: 5px 0;
+}
+
+.right {
+    gap: 10px;
+}
+
+.weather-details p {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .gif {
+        width: 100px;
+        height: 100px;
+        margin-top: 20%;
+    }
+
+    .temperature {
+        font-size: 3em;
+    }
+
+}
