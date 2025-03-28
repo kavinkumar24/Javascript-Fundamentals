@@ -183,6 +183,8 @@ function restartQuiz() {
 ![alt text](./assests/O8.png)
 - In case if the score is very low
 
+![alt text](./assests/Output_gif.gif)
+
 
 ## Output for Moible view
 ![alt text](./assests/image.png)
