@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 5 - Dynamic Quiz Application</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="main_container">
+            <h1>Let's check your knowledge</h1>
+            <div class="quiz_container">
+                <div class="btn_container">
+                    <button onclick="startQuiz()" id="start">Start Quiz</button>
+                    <button onclick="restartQuiz()" id="restart">Restart
+                        Quiz</button>
+                </div>
+                <div class="description">
+                    <p class="start_description">click start to write your
+                        test</p>
+                    <p class="start_description_next">
+                        This quiz contains topic related to HTML, CSS,
+                        JavaScript,
+                        React Js, Tailwind, AWS, Github
+                    </p>
+                </div>
+                <div id="Question">
+                    <h2 id="question"></h2>
+                    <div id="options"></div>
+                    <div id="next"></div>
+
+                    <div id="resultDisplay">
+                        <p id="result_message"></p>
+                        <div id="result">
+                            <p id="score"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="lightbox" class="modal">
+            <div class="modal-content">
+                <h1>Rules of the quiz</h1>
+                <ul>
+                    <li>There are 10 questions with 4 options in this quiz</li>
+                    <li>Choose the correct option</li>
+                    <li>Click next to go to the next question</li>
+                    <li>You can't stop the quiz at middle</li>
+                    <li>Once answer is selected, it couldn't be modified</li>
+                    <li>Click restart to start the quiz again</li>
+                </ul>
+                <button class="close">Proceed</button>
+            </div>
+        </div>
+        <script src="Script.js"></script>
+    </body>
+</html>

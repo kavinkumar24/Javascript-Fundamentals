@@ -1,0 +1,92 @@
+[
+    {
+        "question": "What is GitHub?",
+        "answers": [
+            { "answer": "A cloud storage service", "correct": false },
+            { "answer": "A version control system", "correct": true },
+            { "answer": "A code editor", "correct": false },
+            { "answer": "A programming language", "correct": false }
+        ]
+    },
+    {
+        "question": "What does HTML stand for?",
+        "answers": [
+            { "answer": "Hyper Text Markup Language", "correct": true },
+            { "answer": "High Tech Machine Learning", "correct": false },
+            { "answer": "HyperText Media Language", "correct": false },
+            { "answer": "HyperTag Markup Language", "correct": false }
+        ]
+    },
+    {
+        "question": "What is CSS used for?",
+        "answers": [
+            { "answer": "Styling web pages", "correct": true },
+            { "answer": "Storing data", "correct": false },
+            { "answer": "Programming functionality", "correct": false },
+            { "answer": "Hosting websites", "correct": false }
+        ]
+    },
+    {
+        "question": "What is JavaScript used for?",
+        "answers": [
+            { "answer": "Building user interfaces", "correct": false },
+            { "answer": "Adding interactivity to websites", "correct": true },
+            { "answer": "Designing layouts", "correct": false },
+            { "answer": "Storing data", "correct": false }
+        ]
+    },
+    {
+        "question": "What is React JS?",
+        "answers": [
+            { "answer": "A CSS framework", "correct": false },
+            { "answer": "A JavaScript library for building user interfaces", "correct": true },
+            { "answer": "A database", "correct": false },
+            { "answer": "A programming language", "correct": false }
+        ]
+    },
+    {
+        "question": "What is an EC2 instance in AWS?",
+        "answers": [
+            { "answer": "A serverless compute service", "correct": false },
+            { "answer": "A virtual server in the cloud", "correct": true },
+            { "answer": "A database service", "correct": false },
+            { "answer": "A security service", "correct": false }
+        ]
+    },
+    {
+        "question": "What is a Virtual Private Cloud (VPC) in AWS?",
+        "answers": [
+            { "answer": "A public network in the cloud", "correct": false },
+            { "answer": "A private network within AWS", "correct": true },
+            { "answer": "A web hosting service", "correct": false },
+            { "answer": "A database service", "correct": false }
+        ]
+    },
+    {
+        "question": "What is Tailwind CSS?",
+        "answers": [
+            { "answer": "A CSS framework for building websites", "correct": true },
+            { "answer": "A JavaScript library", "correct": false },
+            { "answer": "A web server", "correct": false },
+            { "answer": "A type of CSS preprocessor", "correct": false }
+        ]
+    },
+    {
+        "question": "What is SQL used for?",
+        "answers": [
+            { "answer": "Styling web pages", "correct": false },
+            { "answer": "Querying and managing relational databases", "correct": true },
+            { "answer": "Building user interfaces", "correct": false },
+            { "answer": "Creating websites", "correct": false }
+        ]
+    },
+    {
+        "question": "What is HTML used for?",
+        "answers": [
+            { "answer": "Creating layouts and designs for websites", "correct": false },
+            { "answer": "Defining the structure of web pages", "correct": true },
+            { "answer": "Storing data", "correct": false },
+            { "answer": "Adding interactivity to websites", "correct": false }
+        ]
+    }
+]
