@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(to right, #a9d4fc, #b4a9fa);
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main_container h1 {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: 300 !important;
+    margin: 40px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+
+}
+
+.draggable-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.draggable-item {
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 10px;
+    cursor: move;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    text-align: left;
+
+}
+
+.dragging {
+    border: 2px dotted #005bb5;
+}
