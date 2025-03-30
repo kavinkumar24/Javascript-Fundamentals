@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 7 - Real-time Chat Simulation</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="main_container">
+            <div class="container" id="container">
+                <div class="greeting">
+                    <h2>Hey, Welcome to the Chat bot!</h2>
+                    <p>Type your message below and hit send.</p>
+                    <ul class="list">
+                        <li>GitHub</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React Js</li>
+                        <li>Angular Js</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>Streamlit</li>
+                        <li>Laravel</li>
+                        <li>CodeIgniter</li>
+                        <li>Figma</li>
+                        <li>AWS</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div id="chat-box" class="chat-box"></div>
+                <div id="loading-dots" class="loading-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="message-input" placeholder="Type a message..." />
+                    <button class="submit_btn" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        
+            <script src="Script.js"></script>
+        </div>
+        
+    </body>
+</html>
