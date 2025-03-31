@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 8 - Single-Page Application (SPA) with Hash-based Routing</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="content">
+            <section id="home" class="view active">
+                <h1>Welcome to the AWS and AZURE events Home Page!</h1>
+                <p>
+                    Stay updated with expert-led sessions, hands-on labs, and
+                    networking opportunities that will help you harness the
+                    power of AWS and Azure to accelerate your cloud journey.
+                    From learning about machine learning models to exploring the
+                    future of serverless computing, our events cover a wide
+                    array of topics to empower you with cutting-edge cloud
+                    technologies.
+                </p>
+                <p>
+                    Join us for an immersive experience where you can connect
+                    with industry leaders, gain insights into best practices,
+                    and discover innovative solutions that can transform your
+                    business. Whether you're a seasoned cloud professional or
+                    just starting your journey, our events are designed to cater
+                    to all skill levels and interests.
+                </p>
+            </section>
+            <section id="about" class="view">
+                <h1>Learn more About Us!</h1>
+                <div class="about-container">
+                <p>
+                    We are dedicated to providing the best learning experience
+                    for our attendees. Our events are designed to be
+                    informative, engaging, and interactive, ensuring that you
+                    leave with valuable knowledge and skills that you can apply
+                    in your work. We believe in the power of community and
+                    collaboration, and our events are a great opportunity to
+                    connect with like-minded individuals who share your passion
+                    for cloud technologies.
+                </p>
+
+                <img src="./assests/info.jpg"
+                    alt="Image 1" class="about-img">
+                </div>
+            </section>
+            <section id="events" class="view main_container">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assests/aws.jpg" alt="Image 1">
+                        </div>
+                        <div class="card-title">
+                            <p>AWS</p>
+                        </div>
+                        <div class="card-desp">
+                            <p>AWS (Amazon Web Services) events are organized to
+                                showcase the latest in cloud computing
+                                technologies,
+                                offering learning opportunities on topics like
+                                infrastructure, machine learning, data
+                                analytics,
+                                and security.</p>
+                        </div>
+                        <div class="card-btn">
+                            <button class="register-btn">
+                                <a href="#register">Register</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./assests/azure.jpg" alt="Image 1">
+                        </div>
+                        <div class="card-title">
+                            <p>Azure</p>
+                        </div>
+                        <div class="card-desp">
+                            <p>Microsoft Azure events bring together cloud
+                                enthusiasts, developers, and IT professionals to
+                                explore the full potential of Azure's cloud
+                                services. Events, including Microsoft Ignite and
+                                Azure Virtual Training Days.</p>
+                        </div>
+                        <div class="card-btn">
+                            <button class="register-btn">
+                                <a href="#register">Register</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="register" class="view">
+                <form id="registration-form">
+                    <h2>Register for an Event</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="event">Select Event:</label>
+                    <select id="event" name="event" required>
+                        <option value>--Select an Event--</option>
+                        <option value="aws">AWS</option>
+                        <option value="azure">Azure</option>
+                    </select>
+
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+            <section id="contact" class="view"><h1>Contact Us Here!</h1>
+            <p>
+                email: ABC@gmail.com
+            </p>
+            
+            <p>
+                phone: 12346788821
+            </p>
+
+            <p>
+                address: 1234, ABC Street, XYZ City, Country
+            </p>
+
+            <p>
+                We are here to assist you with any inquiries or support you
+                may need. Don't hesitate to reach out to us, and we will get
+                back to you as soon as possible.
+            </p>
+            </section>
+           
+        </main>
+
+        <script src="Script.js"></script>
+    </body>
+
+</html>
