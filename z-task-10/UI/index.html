@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>eCommerce Shopping Cart</title>
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>e c a r t</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." id="search-box">
+                </div>
+                <div class="icons">
+                    <a href="#" class="icon" id="cart-icon">
+                        <img src="./assests/shopping-cart.png" alt="Cart">
+                    </a>
+                    <a href="#" class="icon" id="wishlist-icon">
+                        <img src="./assests/favorite.png" alt="Wishlist">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li data-category="Beauty">Beauty</li>
+                <li data-category="Fragrances">Fragrances</li>
+                <li data-category="Furniture">Furniture</li>
+                <li data-category="Groceries">Groceries</li>
+            </ul>
+        </nav>
+        <div class="main_content">
+            <aside>
+                <div class="sidebar-content">
+                    <ul>
+                        <li>
+                            <img src="./assests/free-shipping.png"
+                                alt="Free Shipping" class="sidebar-icon">
+                            <div class="text-content">
+                                <span>Free Shipping</span>
+                                <p class="small-text">Minimum spend of $50</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assests/24-hours-support.png"
+                                alt="24/7 Support" class="sidebar-icon">
+                            <div class="text-content">
+                                <span>24/7 Support</span>
+                                <p class="small-text">Available anytime</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assests/discount.png"
+                                alt="Best Prices and Offers"
+                                class="sidebar-icon">
+                            <div class="text-content">
+                                <span>Best Prices and Offers</span>
+                                <p class="small-text">Up to 50% off on selected
+                                    items</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assests/return.png" alt="Easy Returns"
+                                class="sidebar-icon">
+                            <div class="text-content">
+                                <span>Easy returns</span>
+                                <p class="small-text">Free returns within 30
+                                    days</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+            <div class="top_container">
+                <div class="content_left">
+                    <p>Up to <span style="color: #0088de;">75%</span> off on
+                        Black Friday</p>
+                    <h2>TRENDY <span style="color: #0088de;">FASHION
+                        </span>COLLECTION.</h2>
+                    <br>
+                    <button class="shop-now-button">Shop Now</button>
+                </div>
+
+                <div class="content_right">
+                    <img src="./assests/women-bg-removed.png" alt="eCart Image">
+                </div>
+            </div>
+
+        </div>
+        <h1 id="category_title"></h1>
+        <div id="product-list" class="product-container">
+
+        </div>
+
+        <script src="../Js/Script.js"></script>
+    </body>
+</html>
