@@ -1,4 +1,5 @@
 const productListSection = document.getElementById("product-list");
+const cart_count = document.getElementById("cart-count");
 
 async function fetchProducts() {
   const api_url = "https://dummyjson.com/products";
@@ -52,11 +53,18 @@ async function displayProducts(category = "", searchQuery = "") {
             <p class="rating">(${product.rating})</p>
           </div>
           <div class="price-container">
-            <p class="price"><span>PRICE</span> ₹${product.price.toFixed(2)}</p>
+            <p class="price"><span>PRICE</span> ₹${product.price.toFixed(
+              2
+            )}/-</p>
             <button class="add-to-cart">Add Cart</button>
+
           </div>
         </div>
       `;
+    const addToCartButton = productCard.querySelector(".add-to-cart");
+    addToCartButton.addEventListener("click", () => {
+      AddCart(product);
+    });
 
     productList.appendChild(productCard);
   });
@@ -87,10 +95,31 @@ searchInput.addEventListener("input", () => {
     document.querySelector("nav ul li.active")?.getAttribute("data-category"),
     searchQuery
   );
-  productListSection.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
 });
+
+const AddCart = (Product) => {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existingProductIndex = cart.findIndex((item) => item.id === Product.id);
+  if (existingProductIndex !== -1) {
+    cart[existingProductIndex].quantity += 1;
+  } else {
+    Product.quantity = 1;
+    cart.push(Product);
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Product added to cart!");
+  console.log(Product);
+  location.reload();
+};
+
+function updateCartCount() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const uniqueCartCount = new Set(cart.map((item) => item.id)).size;
+  if (cart_count) {
+    cart_count.innerHTML = uniqueCartCount;
+  }
+}
+
+updateCartCount();
 
 displayProducts();
