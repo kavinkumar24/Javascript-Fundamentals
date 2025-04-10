@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Checkout form</title>
-        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="../styles/form.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+
+
     </head>
     <body>
 
@@ -50,13 +54,24 @@
                 <div class="payment-method">
                     <label for="payment-method">Payment Method:</label>
                     <select id="payment-method" name="payment-method" required>
+                        <option value="" disabled selected>-- Select a payment method --</option>
+
                         <option value="credit-card">Credit Card</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="bank-transfer">Bank Transfer</option>
+                        <option value="upi">UPI Payment</option>
+                        <option value="net-banking">Bank Transfer</option>
+                        <option value="cash-on-delivery">Cash on Delivery</option>
                     </select>
+
+                    <div class="payment-details">
+
+                    </div>
+                    <div id="upi-qr-container" style="margin-top: 20px;"></div>
+
                 </div>
                 <button type="submit">Submit</button>
             </form>
         </div>
+
+        <script src="../../JS/form.js"></script>
     </body>
 </html>
