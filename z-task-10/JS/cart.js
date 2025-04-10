@@ -23,7 +23,6 @@ const displayCartProducts = () => {
         <div class="product-info">
             <h3>${item.title}</h3>
             <p id="stock">${item.availabilityStatus}</p>
-            
             <div class="quantity-container">
             <div class="border-box">
                 <button class="quantity-btn-decrease">-</button>
@@ -32,14 +31,22 @@ const displayCartProducts = () => {
                 </div>
                  <button class="remove-btn" data-id="${item.id}">Remove</button>
             </div>
+            <div class="tags-container">
+           <p>
+          ${item.tags
+            .map((i) => `<span class="tag">${i}</span>`)
+            .join(" ")} | <span class="warrant-info">${
+      item.warrantyInformation
+    }</span> | <span class="shipping-info">${item.shippingInformation}</span>
+        </p>
+        </div>
             <div class="price-container">
             <button class="discount">${item.discountPercentage}% off</button>
             <p class="price">₹${(item.price * item.quantity).toFixed(2)}</p>
             <p class="return-policy">${item.returnPolicy}</p>
       
             </div>
-           
-           
+    
         </div>
         `;
 
