@@ -376,4 +376,9 @@ nav ul li.active {
     .greet-container{
         display: none;
     }
+
+    .star-rating {
+        position: absolute;
+        margin-left: 10%;
+    }
 }

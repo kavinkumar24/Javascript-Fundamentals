@@ -1,5 +1,4 @@
 const cartProducts = document.getElementById("cart-products");
-
 const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 const cartCount = document.getElementById("cart-count");
 const cartTotal = document.getElementById("cart-total");

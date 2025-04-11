@@ -1,10 +1,41 @@
 const paymentMethod = document.querySelector("#payment-method");
 const formSection = document.querySelector("#checkout-form");
 const paymentContainer = document.querySelector(".payment-details");
+const formWholeContainer = document.getElementsByClassName("form-container")[0];
 const qrContainer = document.querySelector("#upi-qr-container");
+const formSubmitButton = document.querySelector("#form-submit-button");
+const totalAmount = document.getElementsByClassName("total-amount")[0];
 
 const qr = new QRious({
   size: 200,
+});
+
+function totalAmountCal() {
+  const cartItems = JSON.parse(localStorage.getItem("cart"));
+  let total = 0;
+  cartItems.forEach((item) => {
+    total += item.price * item.quantity;
+  });
+  let tax = total * 0.1;
+  total += tax;
+  total = total.toFixed(2);
+  totalAmount.textContent = `Total Amount: ₹${total}`;
+}
+
+formSubmitButton.addEventListener("click", (event) => {
+  if (formSection.checkValidity()) {
+    event.preventDefault();
+    formWholeContainer.classList.add("form-submitted");
+    formWholeContainer.innerHTML = `
+    <div>
+        <h2>Form Submitted Successfully!🎉 </h2>
+        <p>Thank you for Ordering.</p>
+        <p>We'll notify once order has been shipped</p>
+    </div>
+  `;
+  } else {
+    form.reportValidity();
+  }
 });
 
 paymentMethod.addEventListener("change", (event) => {
@@ -76,3 +107,5 @@ paymentMethod.addEventListener("change", (event) => {
     qrContainer.innerHTML = ``;
   }
 });
+
+totalAmountCal();

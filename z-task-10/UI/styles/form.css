@@ -87,6 +87,29 @@ button:hover {
     color: #555;
 }
 
+#upi-qr-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.total-amount{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: oklch(62.3% 0.214 259.815);
+}
+
+.form-submitted{
+    background-color: #d4edda;
+    color: #155724;
+    border:1px solid #1b4625;
+  
+}
+
 @media (max-width: 768px) {
     .form-container {
         width: 90%;
@@ -96,6 +119,12 @@ button:hover {
     #checkout-form {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 10px;   
+    }
+
+    .payment-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;   
     }
 }
