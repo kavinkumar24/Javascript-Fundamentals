@@ -457,40 +457,40 @@ paymentMethod.addEventListener("change", (event) => {
 
 ## Output for Web view
 
-![alt text](./assests/O1.png)
+![alt text](./UI/assests/O1.png)
 
-![alt text](./assests/O2.png)
+![alt text](./UI/assests/O2.png)
 
-![alt text](./assests/O2_i.png)
+![alt text](./UI/assests/O2_i.png)
 
-![alt text](./assests/O3.png)
+![alt text](./UI/assests/O3.png)
 
-![alt text](./assests/O4.png)
+![alt text](./UI/assests/O4.png)
 
-![alt text](./assests/O4_i.png)
+![alt text](./UI/assests/O4_i.png)
 
-![alt text](./assests/O5.png)
+![alt text](./UI/assests/O5.png)
 
 ## Output for Mobile view
 
-![alt text](./assests/O1_m.png)
+![alt text](./UI/assests/O1_m.png)
 
-![alt text](./assests/O2_m.png)
+![alt text](./UI/assests/O2_m.png)
 
-![alt text](./assests/O3_m.png)
+![alt text](./UI/assests/O3_m.png)
 
-![alt text](./assests/O4_m.png)
+![alt text](./UI/assests/O4_m.png)
 
-![alt text](./assests/O5_m.png)
+![alt text](./UI/assests/O5_m.png)
 
-![alt text](./assests/O6_m.png)
+![alt text](./UI/assests/O6_m.png)
 
-![alt text](./assests/O6_m_i.png)
+![alt text](./UI/assests/O6_m_i.png)
 
 ## Localstorage
 
-![alt text](./assests/image.png)
+![alt text](./UI/assests/image.png)
 
 ## Demo
 
-![alt text](./assests/ecommerce.gif)
+![alt text](./UI/assests/ecommerce.gif)
